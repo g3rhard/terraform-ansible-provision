@@ -10,3 +10,4 @@
   roles:
     - geerlingguy.pip
     - geerlingguy.docker
+    - gantsign.minikube
