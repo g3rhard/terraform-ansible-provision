@@ -11,3 +11,4 @@
     - geerlingguy.pip
     - geerlingguy.docker
     - gantsign.minikube
+    - githubixx.kubectl
