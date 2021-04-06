@@ -8,6 +8,7 @@
       - blueocean
       - git
       - github
+      - configuration-as-code-plugin
     jenkins_plugins_install_dependencies: true
 
   roles:
