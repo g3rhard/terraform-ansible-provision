@@ -8,8 +8,9 @@
       - blueocean
       - git
       - github
-      - configuration-as-code-plugin
+      - configuration-as-code
     jenkins_plugins_install_dependencies: true
+    jenkins_prefer_lts: true
 
   roles:
     - role: geerlingguy.java
