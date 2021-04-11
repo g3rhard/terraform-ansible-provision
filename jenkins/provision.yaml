@@ -15,3 +15,14 @@
   roles:
     - role: geerlingguy.java
     - role: geerlingguy.jenkins
+
+  tasks:
+    - name: Deny anonymous read access
+      lineinfile:
+        path: /var/lib/jenkins/config.xml
+        line: "<denyAnonymousReadAccess>true</denyAnonymousReadAccess>"
+        regexp: "<denyAnonymousReadAccess>"
+      become: true
+      become_user: jenkins
+      become_method: sudo
+      notify: 'restart jenkins'
