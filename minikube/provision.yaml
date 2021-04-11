@@ -7,6 +7,7 @@
     pip_install_packages:
       - name: docker
     user: ubuntu
+    minikube_download_dir: /opt/minikube
 
   roles:
     - geerlingguy.pip
