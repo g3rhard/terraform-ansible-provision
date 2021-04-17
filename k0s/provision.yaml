@@ -1,0 +1,21 @@
+---
+
+- hosts: all
+  become: yes
+
+  vars:
+    pip_install_packages:
+      - name: docker
+    user: ubuntu
+
+  roles:
+    - geerlingguy.pip
+    - geerlingguy.docker
+    - githubixx.kubectl
+
+  tasks:
+    - name: adding existing user '{{ user }}' to group docker
+      user:
+        name: '{{ user }}'
+        groups: docker
+        append: yes
