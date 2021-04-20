@@ -12,6 +12,7 @@
     - geerlingguy.pip
     - geerlingguy.docker
     - githubixx.kubectl
+    - andrewrothstein.kubernetes-helm
 
   tasks:
     - name: adding existing user '{{ user }}' to group docker

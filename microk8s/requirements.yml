@@ -3,3 +3,4 @@ roles:
   - geerlingguy.pip
   - geerlingguy.docker
   - githubixx.kubectl
+  - andrewrothstein.kubernetes-helm
